@@ -67,20 +67,16 @@ function ocuparEstadia(direccion, semanas) {
   vuelo.asientos = asientos;
 }
 
-let direccion = prompt(
-  "ingrese la dirección del alquiler que desea. Sí no ponga SALIR"
-);
+let direccion = document.getElementById("table_columns");
 
 while (direccion !== "SALIR") {
   const alquilar = obtenerDireccion(direccion);
   console.log(alquilar);
 
-  direccion = prompt(
-    "ingrese otra dirección que también desea alquilar. Sí no ponga SALIR"
-  );
+  direccion = = document.getElementById("table_columns");
   if (direccion != undefined) {
     let cantidadDeSemanas = parseInt(
-      prompt("ingrese cantidad de semanas que quiere alquilar")
+      document.getElementById ("mensaje");
     );
     while (
       cantidadDeSemanas >= 0 ||
@@ -99,3 +95,11 @@ while (direccion !== "SALIR") {
     alert("Dirección inválida");
   }
 }
+const evento = "click";
+const caja = document.getElementById("enviado");
+
+ caja.addEventListener(evento, imprimirMensaje);
+
+ function imprimirMensaje () {
+     console.log("alquiler seleccionado");
+ }
