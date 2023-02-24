@@ -73,11 +73,9 @@ while (direccion !== "SALIR") {
   const alquilar = obtenerDireccion(direccion);
   console.log(alquilar);
 
-  direccion = = document.getElementById("table_columns");
+  direccion == document.getElementById("table_columns");
   if (direccion != undefined) {
-    let cantidadDeSemanas = parseInt(
-      document.getElementById ("mensaje");
-    );
+    let cantidadDeSemanas = parseInt(document.getElementById("mensaje"));
     while (
       cantidadDeSemanas >= 0 ||
       !hayEstadiaDisponible(direccion, semanas)
@@ -98,8 +96,8 @@ while (direccion !== "SALIR") {
 const evento = "click";
 const caja = document.getElementById("enviado");
 
- caja.addEventListener(evento, imprimirMensaje);
+caja.addEventListener(evento, imprimirMensaje);
 
- function imprimirMensaje () {
-     console.log("alquiler seleccionado");
- }
+function imprimirMensaje() {
+  console.log("alquiler seleccionado");
+}
